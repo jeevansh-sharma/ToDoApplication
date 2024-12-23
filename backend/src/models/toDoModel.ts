@@ -1,13 +1,12 @@
 import { pool } from "../db/db"
 
 
-//this is to get all the todos
+
 export const ListTodoUsingUserId= async(userId:number)=>{
     const todo= await pool.query("SELECT * FROM todos WHERE user_id=$1",[userId]);
     return todo.rows;
 }
 
-//thiis is to complete or not to complete a todo
 
 export const CompleteTodoUsingId= async (Id:number, completed:boolean) => {
     const completedData = await pool.query("UPDATE todos SET completed = $1 WHERE id = $2 RETURNING *",[completed, Id]);
