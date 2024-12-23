@@ -1,0 +1,1 @@
+{"root":["./src/middleware.ts","./src/server.ts","./src/controllers/todocont.ts","./src/controllers/usercont.ts","./src/db/db.ts","./src/models/todomodel.ts","./src/models/usermodel.ts","./src/views/graphqlschema.ts","./src/views/resolver.ts"],"version":"5.7.2"}

@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build directories
+/build/
+/dist/
+/out/      # Next.js build output
+
+# Coverage reports
+/coverage/
+
+# Temporary files
+/temp/
+*.tmp
+
+# Environment files
+.env
+.env.*.local
