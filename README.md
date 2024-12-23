@@ -56,13 +56,13 @@ The **MERN To-Do Application** allows users to:
 
     
 ## **Project structure**
-1. Frontend
+1. Frontend:
     -src/graphql containing mutation.ts storing all the resolvers
     -src/components containing various components like navbar, todolist etc
     -src/pages containing various login register landing pages
     -src/ApolloClient.ts for client side setup of graphql
     -src/app.tsx containing various routes and so related to project
-2. Backend
+2. Backend:
    -src/controllers 
    -src/views containing graphqlSchema.ts and resolvers
    -src/models containing models for user and todos
