@@ -1,46 +1,74 @@
-Project Overview
-The To-Do Application is a user-friendly and efficient task management system built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This app allows users to manage their tasks efficiently with essential features such as task addition, deletion, editing, marking tasks as complete, and viewing tasks based on their status.
+# **MERN To-Do Application**
 
-Features
-Core Features
-Add Tasks:
-Users can create new tasks with a simple and intuitive interface.
+## **Project Overview**
+The **MERN To-Do Application** allows users to:
+- Add, delete, edit, and mark tasks as completed.
+- View completed and pending tasks separately.
+- Log in, register, and log out seamlessly.
+- Enjoy a sleek **navbar** and a well-designed **landing page**.
 
-Delete Tasks:
-Unnecessary tasks can be removed with a single click.
+### **Features**
+1. **Task Management**:
+   - Add new tasks with ease.
+   - Edit tasks directly from the task list.
+   - Mark tasks as completed or pending.
+   - Delete tasks when no longer needed.
+   - you can delete both completed and pending tasks
+   - you can only complete and edit pending tasks not completed tasks
 
-Edit Tasks:
-Users can modify the task details as required.
+2. **User Authentication**:
+   - Register a new account.
+   - Log in with existing credentials.
+   - Securely log out when done.
 
-Mark as Completed:
-Tasks can be marked as completed, helping users track their progress.
+3. **Intuitive UI**:
+   - A user-friendly interface with a **responsive design**.
+   - Separate views for completed and pending tasks.
+  
+     
+4. **Protected Routes**
+   -A protected route for my to add a task
+   
+## **Tech Stack**
+- **Frontend**: React, MaterialUI
+- **Backend**: PostgreSQL, GraphQL with Apollo Server, TypeScript, and MVC architecture
+- **Database**: Used raw SQL queries only
+- **Authentication**: JWT (JSON Web Tokens)
 
-Separate Task Views:
+## **Setup Instructions**
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd frontend
+   npm i
+   cd..
+   cd backend
+   npm i
+2. To run the project:
+    ```bash
+    cd frontend
+    npm run start
 
-Completed Tasks Page: View all tasks marked as completed.
-Pending Tasks Page: View all ongoing tasks.
-Authentication System:
+    cd..
+    cd backend
+    npm tsc --build
+    node dist/server.js
 
-Register: Create a new user account.
-Login: Securely access the app.
-Logout: End the session with ease.
-Task Management Page:
-A dedicated page for adding and managing tasks.
-
-Responsive Navbar:
-
-Navigation links for all key pages.
-Highlights user status (logged in/out).
-Landing Page:
-A visually appealing landing page providing an overview of the application.
-
-Tech Stack
-Frontend:
-React.js for building the user interface.
-Material-UI (or CSS/Bootstrap) for styling.
-Backend:
-Node.js with Express.js for server-side logic.
-Database:
-MongoDB for managing user and task data.
-Authentication:
-JWT (JSON Web Tokens) for secure user authentication.
+    
+## **Project structure**
+1. Frontend
+    src/graphql containing mutation.ts storing all the resolvers
+    src/components containing various components like navbar, todolist etc
+    src/pages containing various login register landing pages
+    src/ApolloClient.ts for client side setup of graphql
+    src/app.tsx containing various routes and so related to project
+2. Backend
+   src/controllers 
+   src/views containing graphqlSchema.ts and resolvers
+   src/models containing models for user and todos
+   src/db/db.ts
+   middleware.ts
+   server.ts
+   .env file storing connection string and jwt secret key values provided in .env.example
+   
+    
